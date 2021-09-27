@@ -72,7 +72,7 @@ def gradient_descent(imgs, probe, k_ill_x, k_ill_y, propagator_fw, propagator_bw
      - k_ill_x, k_ill_y: shifts of the probe relative to the object
      - propagator_fw, propagator_bw: kernel for forward and backward propagation in free space
      - x0: initial solution
-     - n_iter: number of iterations. If None, the algorithm will continue until the error is lower than err_final
+     - n_iter: number of iterations
      - step_size: step size of the gradient descent update
     Subfunctions (not included here):
      - err_exp: function comparing the measurements imgs with the prediction from the current solution
