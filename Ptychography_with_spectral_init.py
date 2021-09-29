@@ -57,6 +57,7 @@ def spectral_init(imgs, probe, k_ill_x, k_ill_y, propagator_fw, propagator_bw, x
             prop = propagate(probe * sol_roi, propagator_fw)
             v[roi_x1 : roi_x2, roi_y1 : roi_y2] += np.conj(probe) * propagate(img * prop, propagator_bw)
 
+        sol = v
         sol /= np.linalg.norm(sol)
      
     return sol
